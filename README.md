@@ -20,11 +20,28 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 I created one R script called run_analysis.R that does the following. 
 
-1) Merges the training and the test sets to create one data set. 
-2) Extracts only the measurements on the mean and standard deviation for each measurement. 
-3) Uses descriptive activity names to name the activities in the data set.
-4) Appropriately labels the data set with descriptive variable names. 
-5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1) Reads in the files needed for the analysis (only the 8 listed below were needed to complete this assignment):
+    - subject_train
+    - x_train
+    - y_train
+    - subject_test
+    - x_test
+    - y_test
+    - features
+    - activity_labels
+2) Clean up the "features" table: removed any special characters e.g. brackets, full stops etc.
+3) Using the cleaned data in the features table, rename the variables in the activity tables (both train and test).
+4) Bring in the activity labels (from the activity_labels table) using merge and cbind to include the descriptions in the test and train data. 
+5) Using the rbind function, combine the test and training data to make one large dataframe.
+6) Tidy up the datframe from step 5, remove the unwanted columns and use the grep funtion to keep columns rlating to:
+    - activity
+    - subject
+    - mean
+    - std
+7) Calculate the mean.
+8) Export the final dataframe to a text (.txt) file.
+
+The steps above are clearly marked in the run_analysis.R file that has been included in this repo.
 
 
 
