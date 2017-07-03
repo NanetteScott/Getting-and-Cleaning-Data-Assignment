@@ -14,8 +14,7 @@ Getting and cleaning data assignment
 Please read together with the README.md file:
 https://github.com/NanetteScott/Getting-and-Cleaning-Data-Assignment/blob/master/README.md
 
- 
-###Collection of the raw data
+##Collection of the raw data
 
 The data was downloaded from the following
 locations.
@@ -29,8 +28,7 @@ The files were unzipped into the working directory before being read into R.
 2) Unzip into the working directory
 3) Read into R using read.table (the raw files are in .txt format)
 
- 
-###Cleaning of the data
+##Cleaning of the data
 
 1) Clean up the "features" table: removed any special characters e.g. brackets, full stops etc. Used a for loop to step through each variable in a vector to apply the clean-up.
 2) Using the cleaned data in the features table, rename the variables in the activity tables (both train and test).
@@ -45,14 +43,13 @@ The files were unzipped into the working directory before being read into R.
 6) Calculate the mean for each relevant variable.
 7) Output to a final tidy text file (final_combine_avg.txt)
 
-
 ##Description of the variables in the final_combine_avg.txt
 
 Classes ‘grouped_df’, ‘tbl_df’, ‘tbl’ and 'data.frame':	180 obs. of  88 variables:
- $ subject                          : int  1 1 1 1 1 1 2 2 2 2 ...
- $ activity                         : Factor w/ 6 levels "LAYING","SITTING",..: 1 2 3 4 5 6 1 2 3 4 ...
- $ tbodyaccmeanx                    : num  0.288 0.276 0.28 0.273 0.279 ...
- $ tbodyaccmeany                    : num  -0.0164 -0.0157 -0.0124 -0.0167 -0.0174 ...
+$ subject                          : int  1 1 1 1 1 1 2 2 2 2 ...
+$ activity                         : Factor w/ 6 levels "LAYING","SITTING",..: 1 2 3 4 5 6 1 2 3 4 ...
+$ tbodyaccmeanx                    : num  0.288 0.276 0.28 0.273 0.279 ...
+$ tbodyaccmeany                    : num  -0.0164 -0.0157 -0.0124 -0.0167 -0.0174 ...
  $ tbodyaccmeanz                    : num  -0.114 -0.107 -0.11 -0.104 -0.111 ...
  $ tbodyaccstdx                     : num  -0.621 -0.771 -0.97 -0.633 -0.517 ...
  $ tbodyaccstdy                     : num  -0.598 -0.731 -0.926 -0.508 -0.306 ...
