@@ -41,9 +41,7 @@ I created one R script called run_analysis.R that does the following.
 7) Calculate the mean.
 8) Export the final dataframe to a text (.txt) file.
 
-The steps above are clearly marked in the run_analysis.R file that has been included in this repo.
-
-
+The steps above are clearly marked in the run_analysis.R file that has been included in this repo: https://github.com/NanetteScott/Getting-and-Cleaning-Data-Assignment/blob/master/run_analysis.R
 
 
 # 
