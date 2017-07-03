@@ -7,8 +7,6 @@ output:
     keep_md: yes
 ---
 
-
-
 ## Project Description
 
 Getting and cleaning data assignment
@@ -39,16 +37,17 @@ The files were unzipped into the working directory before being read into R.
 3) Bring in the activity labels (from the activity_labels table) using merge and cbind to include the descriptions in the test and train data. 
 4) Using the rbind function, combine the test and training data to make one large dataframe.
 5) Tidy up the dataframe from step 5, remove the unwanted columns and use the grep function to keep columns relating to:
-    - activity
-    - subject
-    - mean
-    - std
+  - activity
+  - subject
+  - mean
+  - std
 
 6) Calculate the mean for each relevant variable.
 7) Output to a final tidy text file (final_combine_avg.txt)
 
 
 ##Description of the variables in the final_combine_avg.txt
+
 Classes ‘grouped_df’, ‘tbl_df’, ‘tbl’ and 'data.frame':	180 obs. of  88 variables:
  $ subject                          : int  1 1 1 1 1 1 2 2 2 2 ...
  $ activity                         : Factor w/ 6 levels "LAYING","SITTING",..: 1 2 3 4 5 6 1 2 3 4 ...
